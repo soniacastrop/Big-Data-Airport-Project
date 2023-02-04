@@ -27,4 +27,4 @@ the aircraft will need maintenance (1) or not (0) during the next 7 days.
 - **Run-time classifier Pipeline**: In this pipeline we predict whether a new input record is going to need unscheduled
 maintenance.
 
-All the pipelines are explained in more detail in the "Report".
+All the pipelines are explained in more detail in the "Report.pdf".
