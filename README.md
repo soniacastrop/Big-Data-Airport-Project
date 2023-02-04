@@ -8,10 +8,10 @@ This projects wants to predict (and avoid happening) potential future occurrence
 ---
 ## Sources
 - The Data Warehouse: We will simplify the problem and consider only three KPIs: flight hours (FH), 
-flight cycles (FC) and delayed minutes (DM)
+flight cycles (FC) and delayed minutes (DM).
 - The ACMS system: we provide the sensor data generated per flight. We simplify the problem by focusing on
 the aircraft navigation subsystem (ATA code: 3453). You will find a .ZIP file (trainingData.zip) containing 
-376 CSV files
+376 CSV files.
 
 ---
 
@@ -28,3 +28,4 @@ the aircraft will need maintenance (1) or not (0) during the next 7 days.
 maintenance.
 
 All the pipelines are explained in more detail in the "Report.pdf".
+
