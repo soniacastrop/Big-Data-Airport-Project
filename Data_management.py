@@ -1,6 +1,5 @@
 """
 Authors: Sonia Castro Paniello
-         Olga Villar Cairó
 Data: 11/01/23
 """
 
@@ -76,9 +75,9 @@ def Get_DW_data(spark):
     .option("url", "jdbc:postgresql://postgresfib.fib.upc.edu:6433/DW?sslmode=require") \
     .option("dbtable", "public.aircraftutilization") \
     .option("user", "sonia.castro") \
-    .option("password", "DB210402") \
+    .option("password", "********") \
     .load()).select("timeid","aircraftid","flighthours", "flightcycles","delayedminutes").cache()
-
+     #password not shown
     return table_DW
 
 
@@ -96,9 +95,10 @@ def Get_AMOS_data(spark):
     .option("url", "jdbc:postgresql://postgresfib.fib.upc.edu:6433/AMOS?sslmode=require") \
     .option("dbtable", "oldinstance.operationinterruption") \
     .option("user", "sonia.castro") \
-    .option("password", "DB210402") \
+    .option("password", "********") \
     .load())
-
+    #password not shown
+         
     df_AMOS = table_AMOS.select(f.date_format(table_AMOS.starttime, 'yyyy-MM-dd').alias('timeid'), (table_AMOS.aircraftregistration).alias("aircraftid"), "subsystem")\
     .filter(f.col("subsystem")=="3453")\
     .drop("subsystem").cache()
