@@ -1,5 +1,6 @@
 """
 Authors: Sonia Castro Paniello
+         Olga Villar Cairó
 Data: 11/01/23
 """
 
