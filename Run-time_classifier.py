@@ -56,8 +56,9 @@ table_DW = (spark.read \
 .option("url", "jdbc:postgresql://postgresfib.fib.upc.edu:6433/DW?sslmode=require") \
 .option("dbtable", "public.aircraftutilization") \
 .option("user", "sonia.castro") \
-.option("password", "DB210402") \
+.option("password", "********") \
 .load())
+#password not shown
 
 #STEP (1)
 #reads the input (aircraft and day) that will be predicted
