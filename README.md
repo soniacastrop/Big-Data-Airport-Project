@@ -4,7 +4,7 @@ In this project, we want to develop a complex analytical pipeline for predicting
 is going to interrupt its operation unexpectedly in the next seven days (i.e., a predictive analysis). 
 In the AMOS database, there exists a table called Operation Interruption, which reports about past events. 
 This projects wants to predict (and avoid happening) potential future occurrences in this table.
-
+ 
 ---
 ## Sources
 - The Data Warehouse: We will simplify the problem and consider only three KPIs: flight hours (FH), 
