@@ -29,3 +29,5 @@ maintenance.
 
 All the pipelines are explained in more detail in the "Report.pdf".
 
+The passwords of the databases have been removed from the code.
+
